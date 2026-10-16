@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Downloaded model (the app fetches it automatically on first run)
+hand_landmarker.task
+
+# Saved drawings
+aircanvas_*.png
+
+# Your slide images (keep the folder, not the files)
+slides/*
+!slides/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
