@@ -2,7 +2,9 @@
 
 **A gesture-controlled virtual whiteboard for teachers.** Write, draw and run a slide presentation with hand movements in front of a webcam — no keyboard, mouse or touchscreen needed.
 
-> 📽️ **Demo:** _add a GIF or video link here (record your screen while using the app)_
+> 📽️ **Demo:**
+
+![AirCanvas AI demo](demo.gif)
 
 ## Features
 
@@ -30,33 +32,33 @@ Webcam  →  MediaPipe Hand Landmarker  →  Gesture logic  →  OpenCV canvas  
 
 ## Gestures
 
-| Gesture | Action |
-| --- | --- |
-| ☝️ Index finger only | **Draw** (below the toolbar) |
+| Gesture                                      | Action                                                     |
+| -------------------------------------------- | ---------------------------------------------------------- |
+| ☝️ Index finger only                         | **Draw** (below the toolbar)                               |
 | ✌️ Index + middle fingers (ring finger down) | **Select** — hover a toolbar button for ~0.7 s to press it |
-| 🖐️ Open palm, swipe left / right | **Next / previous slide** (SLIDES view only) |
-| Anything else | Pen lifted |
+| 🖐️ Open palm, swipe left / right             | **Next / previous slide** (SLIDES view only)               |
+| Anything else                                | Pen lifted                                                 |
 
 **Toolbar:** 5 colours · ERASE · UNDO · REDO · CLEAR · SHAPE (shape recognition on/off) · VIEW (camera → board → slides) · PREV · NEXT
 
 ## Keyboard shortcuts
 
-| Key | Action |
-| --- | --- |
-| `s` | Save the current board/slide as a PNG |
-| `z` / `y` | Undo / redo |
-| `c` | Clear |
-| `r` | Toggle shape recognition |
-| `v` | Cycle view |
-| `n` / `p` | Next / previous slide |
-| `q` | Quit |
+| Key       | Action                                |
+| --------- | ------------------------------------- |
+| `s`       | Save the current board/slide as a PNG |
+| `z` / `y` | Undo / redo                           |
+| `c`       | Clear                                 |
+| `r`       | Toggle shape recognition              |
+| `v`       | Cycle view                            |
+| `n` / `p` | Next / previous slide                 |
+| `q`       | Quit                                  |
 
 ## Getting started
 
 **Requirements:** Python 3.10+ and a webcam.
 
 ```bash
-git clone https://github.com/<your-username>/aircanvas-ai.git
+git clone https://github.com/<Nafiya-14>/aircanvas-ai.git
 cd aircanvas-ai
 
 # create and activate a virtual environment
@@ -78,13 +80,13 @@ Export your presentation as images and put them in the `slides/` folder, named s
 
 Tweak the constants at the top of `aircanvas.py`:
 
-| Setting | What it does |
-| --- | --- |
-| `SMOOTHING` | Higher = smoother lines but more lag |
-| `DWELL_SECONDS` | How long to hover to press a toolbar button |
-| `PEN_THICKNESS`, `ERASER_THICKNESS` | Brush sizes |
-| `CIRCLE_CIRCULARITY`, `CLOSE_FRAC` | How eagerly shapes snap |
-| `SWIPE_FRAC`, `SWIPE_COOLDOWN` | Swipe sensitivity for slide changes |
+| Setting                             | What it does                                |
+| ----------------------------------- | ------------------------------------------- |
+| `SMOOTHING`                         | Higher = smoother lines but more lag        |
+| `DWELL_SECONDS`                     | How long to hover to press a toolbar button |
+| `PEN_THICKNESS`, `ERASER_THICKNESS` | Brush sizes                                 |
+| `CIRCLE_CIRCULARITY`, `CLOSE_FRAC`  | How eagerly shapes snap                     |
+| `SWIPE_FRAC`, `SWIPE_COOLDOWN`      | Swipe sensitivity for slide changes         |
 
 ## Tips
 
