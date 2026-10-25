@@ -114,4 +114,4 @@ Python · OpenCV · MediaPipe · NumPy
 
 ## License
 
-Add a license of your choice (MIT is a common default for portfolio projects).
+MIT License. See the [LICENSE](LICENSE) file.
